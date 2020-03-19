@@ -9,8 +9,7 @@ export default function About() {
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       />
       <Layout>
-        <div className="col-2"></div>
-        <div className="mt-4 container col-8 text-center">
+        <div className="mt-4 container col-10 text-center">
           <h2>About</h2>
           <div className="markdown text-justify">
             <Markdown
@@ -42,7 +41,7 @@ Node Package Manager:
 
 | Profile       |
 | ------------- |
-| ![](https://pbs.twimg.com/profile_images/1216180788909096960/xgByKsRu_400x400.jpg)  |
+| ![foto](https://pbs.twimg.com/profile_images/1216180788909096960/xgByKsRu_400x400.jpg)  |
 | Firman Abdul Jabar |
 | Universitas Lambung Mangkura |
 | [![drawing](https://pbs.twimg.com/profile_images/1157035760085684224/iuxTnT5g_400x400.jpg)](https://github.com/firmanjabar) [![drawing](https://upload.wikimedia.org/wikipedia/id/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png)](https://twitter.com/firmanjabar) |
@@ -50,7 +49,6 @@ Node Package Manager:
             />
           </div>
         </div>
-        <div className="col-2"></div>
       </Layout>
       <style jsx global>{`
         .markdown {
@@ -123,6 +121,9 @@ Node Package Manager:
         }
         img[alt="logo"] {
           height: 50px;
+        }
+        img[alt="foto"] {
+          height: 200px;
         }
       `}</style>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
