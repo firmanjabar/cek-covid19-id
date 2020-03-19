@@ -1,0 +1,46 @@
+import Link from "../components/ActiveLink";
+
+const Header = () => (
+  <>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        <a className="navbar-brand" href="/">
+          <strong>Covid19 - Indonesia</strong>
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <Link activeClassName="active" href="/">
+                <a className="nav-link">Home</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link activeClassName="active" href="/statistik">
+                <a className="nav-link">Statisttik</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link activeClassName="active" href="/about">
+                <a className="nav-link">About</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </>
+);
+
+export default Header;
